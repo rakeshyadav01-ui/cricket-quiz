@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cricket Quiz</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <div class="quiz-container">
+
+            <!-- Header -->
+            <header class="quiz-header">
+
+                <div class="brand">
+                    <div class="brand-icon">🏏</div>
+
+                    <div>
+                        <h1>Cricket Quiz</h1>
+                        <p>Test your cricket knowledge</p>
+                    </div>
+                </div>
+
+                <div class="question-count">
+                    <span id="currentQuestion">5</span>
+                    Questions
+                </div>
+
+            </header>
+
+
+            <!-- Progress -->
+            <div class="progress-section">
+
+                <div class="progress-info">
+                    <span>Quiz Progress</span>
+                    <span id="progressText">0 / 5 answered</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+
+            </div>
+
+
+            <!-- Quiz Form -->
+            <form id="quizForm">
+
+                <!-- Questions will be created by JavaScript -->
+
+            </form>
+
+
+            <!-- Submit button will be created by JavaScript -->
+
+
+            <!-- Result -->
+            <div id="out" class="result hidden">
+
+                <div class="result-icon" id="resultIcon">
+                    🏆
+                </div>
+
+                <h2 id="resultTitle">
+                    Quiz Completed!
+                </h2>
+
+                <p id="resultMessage"></p>
+
+                <div class="score-box">
+
+                    <span id="scoreNumber">0</span>
+
+                    <span class="score-total">
+                        / 5
+                    </span>
+
+                </div>
+
+                <button
+                    type="button"
+                    id="restartBtn"
+                    class="restart-btn"
+                >
+                    🔄 Try Again
+                </button>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Made with ❤️ for cricket lovers</p>
+        </footer>
+
+    </main>
+
+
+    <!-- Question data -->
+    <script src="./first.js"></script>
+
+    <!-- Quiz functionality -->
+    <script src="./app.js"></script>
+
+</body>
+</html>
