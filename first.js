@@ -1,255 +1,107 @@
-const questionBank = [
-
-    {
-        question: "Who has the most centuries in international cricket?",
-        options: [
-            "Sachin Tendulkar",
-            "Virat Kohli",
-            "Ricky Ponting",
-            "Jacques Kallis"
-        ],
-        answer: "Sachin Tendulkar"
-    },
-
-    {
-        question: "Which country won the first ICC Cricket World Cup?",
-        options: [
-            "Australia",
-            "England",
-            "West Indies",
-            "India"
-        ],
-        answer: "West Indies"
-    },
-
+const questions = [
     {
         question: "Who is known as the 'God of Cricket'?",
-        options: [
-            "Virat Kohli",
-            "Don Bradman",
-            "MS Dhoni",
-            "Sachin Tendulkar"
-        ],
+        options: ["Virat Kohli", "MS Dhoni", "Sachin Tendulkar", "Ricky Ponting"],
         answer: "Sachin Tendulkar"
     },
-
     {
-        question: "What is the highest individual score in ODI cricket?",
-        options: [
-            "264",
-            "200",
-            "237",
-            "275"
-        ],
-        answer: "264"
-    },
-
-    {
-        question: "Which bowler has taken the most wickets in Test cricket?",
-        options: [
-            "Muttiah Muralitharan",
-            "Shane Warne",
-            "James Anderson",
-            "Anil Kumble"
-        ],
-        answer: "Muttiah Muralitharan"
-    },
-
-    {
-        question: "Which Indian player is known as the 'Hitman'?",
-        options: [
-            "Rohit Sharma",
-            "Virat Kohli",
-            "MS Dhoni",
-            "Shikhar Dhawan"
-        ],
-        answer: "Rohit Sharma"
-    },
-
-    {
-        question: "Who won the ICC Cricket World Cup 2011?",
-        options: [
-            "India",
-            "Sri Lanka",
-            "Australia",
-            "England"
-        ],
+        question: "Which country won the 2011 Cricket World Cup?",
+        options: ["Australia", "India", "Sri Lanka", "England"],
         answer: "India"
     },
-
     {
-        question: "Who holds the record for the fastest century in ODI cricket?",
-        options: [
-            "AB de Villiers",
-            "Chris Gayle",
-            "Shahid Afridi",
-            "Virat Kohli"
-        ],
-        answer: "AB de Villiers"
+        question: "How many players are there in a cricket team?",
+        options: ["9", "10", "11", "12"],
+        answer: "11"
     },
-
     {
-        question: "Which country is known as the Proteas in cricket?",
-        options: [
-            "South Africa",
-            "Australia",
-            "England",
-            "New Zealand"
-        ],
-        answer: "South Africa"
+        question: "Which format of cricket is played for 20 overs per side?",
+        options: ["Test", "ODI", "T20", "First Class"],
+        answer: "T20"
     },
-
     {
-        question: "Who has the most sixes in international cricket?",
-        options: [
-            "Chris Gayle",
-            "MS Dhoni",
-            "Rohit Sharma",
-            "Shahid Afridi"
-        ],
-        answer: "Chris Gayle"
+        question: "Who is known as 'Captain Cool'?",
+        options: ["Rohit Sharma", "MS Dhoni", "Virat Kohli", "Kapil Dev"],
+        answer: "MS Dhoni"
     },
-
     {
-        question: "Which team has won the most ICC Cricket World Cups?",
-        options: [
-            "Australia",
-            "India",
-            "West Indies",
-            "England"
-        ],
-        answer: "Australia"
+        question: "How many overs are there in a standard ODI innings?",
+        options: ["20", "40", "50", "60"],
+        answer: "50"
     },
-
     {
-        question: "Who is the youngest player to score a century in international cricket?",
-        options: [
-            "Shahid Afridi",
-            "Virat Kohli",
-            "Sachin Tendulkar",
-            "Rashid Khan"
-        ],
-        answer: "Shahid Afridi"
+        question: "Which country hosted the 2019 Cricket World Cup?",
+        options: ["India", "Australia", "England", "South Africa"],
+        answer: "England"
     },
-
     {
-        question: "Which cricket stadium is the largest in the world?",
-        options: [
-            "Narendra Modi Stadium",
-            "MCG",
-            "Lord's",
-            "Eden Gardens"
-        ],
-        answer: "Narendra Modi Stadium"
+        question: "Who won the first ICC T20 World Cup in 2007?",
+        options: ["Pakistan", "India", "Australia", "Sri Lanka"],
+        answer: "India"
     },
-
     {
-        question: "Who is the fastest bowler in cricket history?",
-        options: [
-            "Shoaib Akhtar",
-            "Brett Lee",
-            "Shaun Tait",
-            "Mitchell Starc"
-        ],
-        answer: "Shoaib Akhtar"
+        question: "What is the maximum number of runs a batter can normally score by hitting the ball over the boundary without it bouncing?",
+        options: ["4", "5", "6", "8"],
+        answer: "6"
     },
-
     {
-        question: "Which player has the highest batting average in Test cricket?",
-        options: [
-            "Don Bradman",
-            "Steve Smith",
-            "Kane Williamson",
-            "Jacques Kallis"
-        ],
-        answer: "Don Bradman"
-    },
-
-    {
-        question: "Which player was India's ODI captain in 2023?",
-        options: [
-            "Rohit Sharma",
-            "Virat Kohli",
-            "KL Rahul",
-            "Hardik Pandya"
-        ],
+        question: "Which player is popularly known as the 'Hitman'?",
+        options: ["Rohit Sharma", "Virat Kohli", "AB de Villiers", "Chris Gayle"],
         answer: "Rohit Sharma"
     },
-
     {
-        question: "Which bowler has the best bowling figures in ODI cricket?",
-        options: [
-            "Chaminda Vaas",
-            "Muttiah Muralitharan",
-            "Glenn McGrath",
-            "Anil Kumble"
-        ],
-        answer: "Chaminda Vaas"
+        question: "Which team has won the most ODI Cricket World Cups?",
+        options: ["India", "Australia", "West Indies", "Pakistan"],
+        answer: "Australia"
     },
-
     {
-        question: "Which country is known as the Black Caps in cricket?",
-        options: [
-            "New Zealand",
-            "South Africa",
-            "England",
-            "West Indies"
-        ],
-        answer: "New Zealand"
+        question: "What is a score of zero by a batter called?",
+        options: ["Duck", "Goose", "Blank", "Nil"],
+        answer: "Duck"
     },
-
     {
-        question: "Who is the highest run-scorer in T20 internationals?",
-        options: [
-            "Virat Kohli",
-            "Rohit Sharma",
-            "Babar Azam",
-            "Chris Gayle"
-        ],
-        answer: "Virat Kohli"
+        question: "Which country is famous for the Big Bash League (BBL)?",
+        options: ["England", "Australia", "India", "New Zealand"],
+        answer: "Australia"
     },
-
     {
-        question: "Which cricket ground is known as the 'Home of Cricket'?",
-        options: [
-            "Lord's",
-            "MCG",
-            "Eden Gardens",
-            "The Oval"
-        ],
-        answer: "Lord's"
+        question: "Who was India's first captain to win the ODI World Cup?",
+        options: ["Sunil Gavaskar", "Kapil Dev", "MS Dhoni", "Sourav Ganguly"],
+        answer: "Kapil Dev"
+    },
+    {
+        question: "How many stumps are used to make one wicket?",
+        options: ["2", "3", "4", "5"],
+        answer: "3"
+    },
+    {
+        question: "Which player is famous for the nickname 'Universe Boss'?",
+        options: ["Chris Gayle", "Andre Russell", "Kieron Pollard", "Brian Lara"],
+        answer: "Chris Gayle"
+    },
+    {
+        question: "What is the length of a cricket pitch?",
+        options: ["20 yards", "22 yards", "24 yards", "25 yards"],
+        answer: "22 yards"
+    },
+    {
+        question: "Which country won the 2019 Cricket World Cup?",
+        options: ["New Zealand", "Australia", "India", "England"],
+        answer: "England"
+    },
+    {
+        question: "Which player is known for the nickname 'Mr. 360'?",
+        options: ["AB de Villiers", "David Warner", "Glenn Maxwell", "Jos Buttler"],
+        answer: "AB de Villiers"
+    },
+    {
+        question: "How many legal deliveries are there in a standard cricket over?",
+        options: ["5", "6", "7", "8"],
+        answer: "6"
     }
-
 ];
 
-
-
-/*
-    Return 5 random questions
-*/
-
 function getRandomQuestions() {
-
-    const shuffledQuestions = [...questionBank];
-
-    for (
-        let i = shuffledQuestions.length - 1;
-        i > 0;
-        i--
-    ) {
-
-        const randomIndex =
-            Math.floor(Math.random() * (i + 1));
-
-        [
-            shuffledQuestions[i],
-            shuffledQuestions[randomIndex]
-        ] = [
-            shuffledQuestions[randomIndex],
-            shuffledQuestions[i]
-        ];
-    }
-
-
-    return shuffledQuestions.slice(0, 5);
+    const shuffled = [...questions].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 5);
 }
